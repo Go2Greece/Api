@@ -1,0 +1,1271 @@
+{
+	"info": {
+		"_postman_id": "d9ad4cf6-81fc-4994-b29c-9e8111b15953",
+		"name": "Go2Greece Live API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14712462-d9ad4cf6-81fc-4994-b29c-9e8111b15953"
+	},
+	"item": [
+		{
+			"name": "Go2Greece Root Services",
+			"item": [
+				{
+					"name": "int.go2greece.com/aboutus",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "db578c10-9433-40a2-bf6e-6c0ec2dfd011",
+								"exec": [
+									"pm.variables.get(\"QuickLinks\");\r",
+									"\r",
+									"pm.test(\"Response has the required fields - Permalink, NameEn, and QuickLinks\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('Permalink');\r",
+									"    pm.expect(responseData).to.have.property('NameEn');\r",
+									"    pm.expect(responseData).to.have.property('QuickLinks');\r",
+									"});\r",
+									"var template = `\r",
+									"<p>Pass for 200</p>\r",
+									"`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    return {response: pm.response.json()};\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "21ebc53b-170a-4ac0-ab39-f2c687514116",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.102",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"102"
+							]
+						},
+						"description": "Go2Greece About Main **Greece** Page"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/information",
+					"id": "0d2fb4d6-048f-4364-802e-eeae6ed2f517",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/information",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"information"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e9f3fc8c-e974-4475-9887-a0a489cc80b7",
+							"name": "int.go2greece.com/information",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"aaa\": \"bbb\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44336/information",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44336",
+									"path": [
+										"information"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"cookie": []
+						},
+						{
+							"id": "6e4a457e-a36a-4674-887b-8e417e508b14",
+							"name": "int.go2greece.com/information",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44336/information",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44336",
+									"path": [
+										"information"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?RDpcVmlzdWFsIFN0dWRpbyBQcm9qZWN0cyBhbmQgU29sdXRpb25zXFNvbHV0aW9uIEZvbGRlcnNcR28yR3JlZWNlMjAyNFxHbzJHcmVlY2UuQVBJXGluZm9ybWF0aW9u?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Apr 2024 11:15:27 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Permalink\": null,\n    \"NameEn\": null,\n    \"QuickLinks\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "int.go2greece.com/location",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "553f5670-2038-4a87-981d-935821f12f04",
+								"exec": [
+									"var template = `",
+									"<style type=\"text/css\">",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+									"    .tftable tr {background-color:#ffffff;}",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+									"    .tftable tr:hover {background-color:#e0ffff;}",
+									"</style>",
+									"",
+									"<table class=\"tftable\" border=\"1\">",
+									"    <tr>",
+									"        <th>Permalink</th>",
+									"        <th>Name (English)</th>",
+									"        <th>Quick Links</th>",
+									"    </tr>",
+									"    <tr>",
+									"        <td>{{response.Permalink}}</td>",
+									"        <td>{{response.NameEn}}</td>",
+									"        <td>{{response.QuickLinks}}</td>",
+									"    </tr>",
+									"</table>",
+									"`;",
+									"",
+									"function constructVisualizerPayload() {",
+									"    return { response: pm.response.json() }",
+									"}",
+									"",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "ad3aa61d-fbce-42b0-a00a-f903a9c5c639",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/location",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/ports",
+					"id": "66707657-84ec-4fe3-aeaf-519fd76f74a1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/ports",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"ports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/pictures",
+					"id": "5d1dd11b-0374-45f7-ba69-82c7f0ee254d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/pictures",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"pictures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/privacy",
+					"id": "37939f77-0e80-4eff-9092-7f0012cf212d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/privacy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"privacy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/realestate",
+					"id": "b98c3c12-3c7f-4f49-b102-097a4462431f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/realestate",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"realestate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/reviews",
+					"id": "526424fb-4cba-4e65-8300-cef0089e5347",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/reviews",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/resortguide",
+					"id": "572ba6c5-6ae3-45a2-ae2d-2331982b4e85",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/resortguide",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"resortguide"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/terms",
+					"id": "3d5316f7-35d5-4141-813a-f3cd4156c8ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/terms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"terms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/transfers",
+					"id": "12a2bc9f-78af-4b55-985a-9c9a103f3dfe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/transfers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"transfers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/sitemap",
+					"id": "9caf2afc-0ee1-45ee-88cb-a63388e962a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/sitemap",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"sitemap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/travelinsurance",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "089a1d96-8cf3-45f2-95cd-8ba2e357d14d",
+								"exec": [
+									"pm.variables.get(\"QuickLinks\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "02e83e42-a447-41cd-9910-062934d2b5a1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/travelinsurance",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"travelinsurance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/videos",
+					"id": "f1542367-10ac-43d9-9e49-41f3eccd95e5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/videos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"videos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/contactus",
+					"id": "24fb317f-2f64-404d-98a7-eb2fed58dea4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/contactus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"contactus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/weather",
+					"id": "31559ce2-fe64-4368-afd3-17cd233d5faa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/weather",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"weather"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/workers",
+					"id": "033ab72c-0e37-4fa4-a6c2-c921d97b69d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/workers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"workers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/tickets",
+					"id": "1f7a297c-9ba3-4648-b084-cdb40a636d85",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/tickets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/galleries",
+					"id": "174c2f12-1408-4918-9341-e2b12a290668",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/galleries",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"galleries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/advertising",
+					"id": "a4bf80f0-cbfe-4b7e-a5af-8a43968eb8a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/advertising",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"advertising"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/jobs",
+					"id": "aa7ff68d-197b-4efa-b483-a392afc9d94d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/jobs",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"jobs"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/blogs",
+					"id": "dc6f929b-99c8-4788-bb2f-b827eb86488f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/blogs",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"blogs"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/webcams",
+					"id": "a16b93db-77a0-46d0-a7c6-e89ac0fd6aa2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/webcams",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"webcams"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/booknow",
+					"id": "b762d522-4b04-4237-bf81-7e52482d1ed7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/booknow",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"booknow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/resorts",
+					"id": "ddfbd143-f8dd-4a6f-90b0-41a8a42556c5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/resorts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"resorts"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/availability",
+					"id": "6fdafad5-bd46-437b-902e-c8b7e41039d7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/availability",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"availability"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/excursions",
+					"id": "37254332-668a-4733-9c5f-e0a50a128715",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/excursions",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"excursions"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/inresort",
+					"id": "5ba3c835-d953-41f8-8ef9-79d4db6a71c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/inresort",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"inresort"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/news",
+					"id": "7fd10b49-ec65-445c-b19b-1547a9fb4546",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/news",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"news"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/newsletter",
+					"id": "1e663211-ea1d-427d-a739-50228b9fcfab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/newsletter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"newsletter"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/otherresorts",
+					"id": "dad7257d-d85f-43f4-b7e2-b8efdf9e0692",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/otherresorts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"otherresorts"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/ferries",
+					"id": "cf194847-eb13-40ed-bd20-236388767721",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/ferries",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"ferries"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/thingstodo",
+					"id": "93101425-0a68-4705-a7fe-f5568a400625",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/thingstodo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"thingstodo"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/businessfocus",
+					"id": "ca3bcd27-bc36-445d-9bbe-fe33792d55be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/businessfocus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"businessfocus"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/nowtrending",
+					"id": "a113f38d-5442-4b0e-a056-08107dfa4294",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/businessfocus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"businessfocus"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/reservations",
+					"id": "b73f24f1-5655-4991-8b11-4be8766f6ac9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/reservations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"reservations"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/morego2greece",
+					"id": "b1390861-4a31-4e6d-b1f5-8385fa270ae5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/morego2greece",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"morego2greece"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/events",
+					"id": "f308d890-2dc8-43f5-9236-bf761f47b80b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/businessfocus",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"businessfocus"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/webextenders",
+					"id": "036ddaa3-544b-40c8-8151-d2d5da7a8a7b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/webextenders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"webextenders"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/search",
+					"id": "fe2387e0-89e0-44a1-aa1d-871bf7e78d1a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/search",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"search"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com",
+					"id": "4bbbadea-52c7-4c04-b41f-1171b7b29f5c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/services",
+					"id": "724f8641-fe0e-4db6-a9e1-9e2fc2765326",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/services",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"services"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com",
+					"id": "f9f10c06-c936-4f81-bfe5-ecce45d2c25b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"UserName\":\"U11111N\", \"Password\":\"123\",  \"Email\":\"EM@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44336/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/thingstosee",
+					"id": "29bfe90a-844c-46e3-9151-739e78e594d1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/thingstosee",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"thingstosee"
+							]
+						},
+						"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
+					},
+					"response": []
+				},
+				{
+					"name": "int.go2greece.com/flights",
+					"id": "8cc5a4ca-aee4-4c70-98ee-41e27f553ef7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/flights",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"flights"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "234d0e02-f02c-498e-b507-b33b81b0a905",
+			"description": "These are the live endpoints to retreive the service pages for the Go2Greece Root Domain."
+		}
+	]
+}
