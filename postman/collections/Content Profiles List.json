@@ -5,5 +5,46 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "14712462-a12716e7-7e84-43e4-87e9-117aea3acabb"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "int.go2greece.com/{destinationid}/aboutus Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "071b917c-9351-403c-a3e9-5e254ea2b40c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/aboutus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"aboutus"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
