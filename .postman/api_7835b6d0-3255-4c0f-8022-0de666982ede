@@ -9,8 +9,10 @@ id = 7835b6d0-3255-4c0f-8022-0de666982ede
 
 [config.relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"14712462-3e238bb8-4524-4ba2-a28a-09a1c090abec","path":"Go2Greece Admin Portal APi.json","metaData":{}}
-files[] = {"id":"14712462-d9ad4cf6-81fc-4994-b29c-9e8111b15953","path":"Go2Greece Live API.json","metaData":{}}
+files[] = {"id":"14712462-a12716e7-7e84-43e4-87e9-117aea3acabb","path":"Content Profiles List.json","metaData":{}}
+files[] = {"id":"14712462-3f0cae0d-57ad-44af-b2e2-04ecc837d35f","path":"Core.json","metaData":{}}
+files[] = {"id":"14712462-4c6cf42f-8a3f-4258-87a0-0a9c097fed43","path":"Destination Service Pages.json","metaData":{}}
+files[] = {"id":"14712462-1489884c-836c-4c59-82bf-b46b4a1c6b93","path":"Root Service Pages.json","metaData":{}}
 
 [config.relations.collections.metaData]
 

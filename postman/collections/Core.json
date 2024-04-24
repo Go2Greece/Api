@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "3f0cae0d-57ad-44af-b2e2-04ecc837d35f",
+		"name": "Core",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14712462-3f0cae0d-57ad-44af-b2e2-04ecc837d35f"
+	},
+	"item": [
+		{
+			"name": "int.go2greece.com/{destinationid}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "c26f85bc-293c-4134-bd00-ae1d09945551",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9dbf5f3f-0d5b-4600-82f4-a999e5115759",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "4bbbadea-52c7-4c04-b41f-1171b7b29f5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

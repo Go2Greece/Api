@@ -1,0 +1,1690 @@
+{
+	"info": {
+		"_postman_id": "4c6cf42f-8a3f-4258-87a0-0a9c097fed43",
+		"name": "Destination Service Pages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14712462-4c6cf42f-8a3f-4258-87a0-0a9c097fed43"
+	},
+	"item": [
+		{
+			"name": "int.go2greece.com/{destinationid}/aboutus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "cbf82679-7dfd-4339-80ea-b7432ce56693",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/aboutus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"aboutus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/additionalinfo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "304ee14b-c2a2-461f-95e0-a9558a7fd64f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/additionalinfo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"additionalinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/adminpictures",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "042714bf-afba-4d1b-8d8c-ecd8b52cd4d3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/adminpictures",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"adminpictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/advertising",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "ebfce617-30cc-41f9-a360-21bcf823edc0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/advertising",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"advertising"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/availability",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "154f4fd3-da76-43b3-86f2-f3361a64a556",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/availability",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"availability"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/blogs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "54a872b7-1c15-4ba0-b87f-0dd01ef6fe81",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/blogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/booknow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "64251d40-3c95-40a3-8826-ac98ba21640b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/booknow",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"booknow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/businessfocus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "b5d537fa-e8df-4be9-9cb2-becc409614a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/businessfocus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"businessfocus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/contactus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "71e7e4dc-fe7f-432e-9a79-8987811813f1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/contactus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"contactus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/events",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "f5f53757-f64a-4ad9-9737-602e90df82d0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/events",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/excursions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "a37a2dc9-b34d-4c65-addf-f1b8f6acf98d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/excursions",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"excursions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/faqs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "e5301158-e7e4-44c3-b28d-92ced95c3e21",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/faqs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"faqs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/ferries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "3ede95d0-881d-4ae7-930a-551062891ccc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/ferries",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"ferries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/flights",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "6e110580-6373-4d16-889b-1621a506f79d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/flights",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/hotels",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "52f474c1-a498-4f35-a543-54ae58689ccc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/hotels",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/inresort",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "2628817b-490e-4c59-92d8-8ec99b21b788",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/inresort",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"inresort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/jobs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "26ed0905-0782-41ad-9c98-67c2b757820a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/jobs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/locationmap",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "11568e29-a7f2-4474-8dfd-c2b476021a14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/locationmap",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"locationmap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/morego2greece",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "9deebd01-9b72-42e0-ba40-8a8798839b2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/morego2greece",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"morego2greece"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/newsletter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "de869618-8b07-41de-9378-96c6c2239bea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/newsletter",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"newsletter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/news",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "b68d6f83-4036-4003-ad25-6e36d9e44e0c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/news",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/otherresorts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "4d181553-e575-48f9-89e0-78d67d8baf61",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/otherresorts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"otherresorts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/ports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "1f18fe00-03e9-491a-8719-68ce1dc06d2f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/ports",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"ports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/privacy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "ae30d9c2-681f-4f57-af58-7d12251cf42d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/privacy",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"privacy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/realestate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "49b34b53-de56-4165-bf4a-2631e3769b6b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/realestate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"realestate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/resortguide",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "b8366f53-7b17-4215-8e12-b8ae72541836",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/resortguide",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"resortguide"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/reviews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "1c153214-6a07-4938-890e-0e398946f919",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/reviews",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "a4f28bb3-cd2c-4c84-bac0-85bab09c20c8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/sitemap",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "5faf95e2-b779-4c7a-8b00-ddc40075f272",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/sitemap",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"sitemap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/terms",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "3edc9370-ac5d-450b-8f2b-9e2fd88e6816",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/terms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"terms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/thingstodo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "aad67824-cf63-4051-8cb7-222f99bbb3ec",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/thingstodo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"thingstodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/thingstosee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "a98e1662-1b7c-4359-a3c6-f3623b224f0a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/thingstosee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"thingstosee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/tickets",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "7db8c3bd-1d59-4b41-97f4-eac7a9dba433",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/tickets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/touristpictures",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "8ebf0aba-bb27-42c2-8895-f882b21463b2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/touristpictures",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"touristpictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/trademarks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "c43037b2-ad32-4104-8425-ce8fe4050f47",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/trademarks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"trademarks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/traffic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "9b0ee1a6-23fd-4f00-af83-f4d6f2070e3c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/traffic",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"traffic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/transfers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "4901eb0b-210a-448c-8114-13a7af386d74",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/transfers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"transfers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/videos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "20231e43-2f49-4c3e-b753-fafa1c784ef3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/videos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/weather",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "050b1812-a895-456b-abae-3683324fd847",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/weather",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}webcams",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "d82997d3-2086-441e-95f1-e8d66c6dd21b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/webcams",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"webcams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/webextenders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "5dc29fa6-7195-4a8f-a4b7-eb813e55716a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/webextenders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"webextenders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/{destinationid}/workers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "60bf0932-e8d0-45fb-90c6-819792e58e29",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/destinations/{{destinationid}}/workers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"destinations",
+						"{{destinationid}}",
+						"workers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
