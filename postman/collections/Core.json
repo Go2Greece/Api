@@ -7,6 +7,113 @@
 	},
 	"item": [
 		{
+			"name": "int.go2greece.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9dbf5f3f-0d5b-4600-82f4-a999e5115759",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "4bbbadea-52c7-4c04-b41f-1171b7b29f5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336"
+				}
+			},
+			"response": [
+				{
+					"id": "83d64343-d3b5-4e85-83d6-fbe941956caa",
+					"name": "int.go2greece.com/happydays",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/malia-crete/happydays",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"malia-crete",
+								"happydays"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1269"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Response-Type",
+							"value": "ContentProfileLevel2"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVmlzdWFsIFN0dWRpbyBQcm9qZWN0cyBhbmQgU29sdXRpb25zXFNvbHV0aW9uIEZvbGRlcnNcR28yR3JlZWNlMjAyNFxHbzJHcmVlY2UuQVBJXG1hbGlhLWNyZXRlXGhhcHB5ZGF5cw==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Apr 2024 21:01:50 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"EnglishName\": \"Happy Days Studios &  Apartments\",\n    \"GreekName\": null,\n    \"Description\": \"Happy Days is a large clean and modern complex, rooms include such luxuries as TV’s and Air Conditioning (payable locally), plus self catering facilities. There is also an Air conditioned restaurant, bar and seating area. \\r\\n\\r\\nHappy Days has 30 studios for 3 people, 28 studios for 2 people and 2 apartments for 3 or 4 people:\\r\\neach room is equipped with a television, telephone, hair dryer, kettle, an iron (available on request) and air conditioning (payable locally) Adjoining studios are available for families or parties dependant on availability.\\r\\n\\r\\nEverything to make your stay a memorable one is provided, including an entertainment programme made up of a variety of games, quiz’s, theme nights, (don’t forget your fancy dress) and a weekly BBQ. All major sports events are shown in an air conditioned restaurant area on the big screen around the poolside.\\r\\n\\r\\nWith two pools, a large sunbathing area and a bar with full restaurant facilities and a varied menu this will provide the perfect location for you to relax and soak up the rays, whilst listening to the latest beats enabling you to recharge your batteries ready for your next evening escapades. \\r\\n\"\n}"
+				}
+			]
+		},
+		{
 			"name": "int.go2greece.com/{destinationid}",
 			"event": [
 				{
@@ -46,12 +153,12 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com",
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "9dbf5f3f-0d5b-4600-82f4-a999e5115759",
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -62,7 +169,7 @@
 					}
 				}
 			],
-			"id": "4bbbadea-52c7-4c04-b41f-1171b7b29f5c",
+			"id": "bf1c821d-6eae-4061-bc3a-4862e9e05eb3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -70,14 +177,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/",
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						""
+						"contentprofileslists",
+						"{{contentprofilesllstid}}"
 					]
 				}
 			},

@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "a12716e7-7e84-43e4-87e9-117aea3acabb",
+		"name": "Content Profiles List Service Pages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14712462-a12716e7-7e84-43e4-87e9-117aea3acabb"
+	},
+	"item": [
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/faqs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "071b917c-9351-403c-a3e9-5e254ea2b40c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/faqs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"faqs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/reviews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "acd8951b-35be-4707-91bb-afb723b0ea6b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/reviews",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/pictures",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "58e5d47f-ab04-429b-8939-c20b30841329",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/pictures",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/map",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "6ec4f925-6476-4813-b707-daad645cea32",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/map",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/videos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "b18b9d8d-a486-4f9c-a7cb-ee53ece43653",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/videos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/news",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "03aa3950-72fa-412c-876d-6c32045893eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/news",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/jobs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "1db9eb0b-f34d-41a1-ba25-44d9d0e70bcf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/jobs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/blogs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "56add546-988c-493a-9130-f3ec5348726a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/blogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/history",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "1662cbb1-820f-4894-a3c8-5c5524f8ef23",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/history",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/info",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "d01d50ab-e7f1-4116-8b3c-a4285222046b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/info",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/galleries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "b45f931a-6dd8-4e84-b477-8ecde4c3e803",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/galleries",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"contentprofileslists",
+						"{{contentprofilesllstid}}",
+						"galleries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

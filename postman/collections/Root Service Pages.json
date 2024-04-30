@@ -7,6 +7,61 @@
 	},
 	"item": [
 		{
+			"name": "int.go2greece.com/aboutus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "db578c10-9433-40a2-bf6e-6c0ec2dfd011",
+						"exec": [
+							"pm.variables.get(\"QuickLinks\");\r",
+							"\r",
+							"pm.test(\"Response has the required fields - Permalink, NameEn, and QuickLinks\", function () {\r",
+							"    const responseData = pm.response.json();\r",
+							"    \r",
+							"    pm.expect(responseData).to.be.an('object');\r",
+							"    pm.expect(responseData).to.have.property('Permalink');\r",
+							"    pm.expect(responseData).to.have.property('NameEn');\r",
+							"    pm.expect(responseData).to.have.property('QuickLinks');\r",
+							"});\r",
+							"var template = `\r",
+							"<p>Pass for 200</p>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return {response: pm.response.json()};\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "21ebc53b-170a-4ac0-ab39-f2c687514116",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/aboutus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"aboutus"
+					]
+				},
+				"description": "Go2Greece About Main **Greece** Page"
+			},
+			"response": []
+		},
+		{
 			"name": "int.go2greece.com/location",
 			"id": "a59a8538-3c89-485f-90ff-30db56c3635e",
 			"protocolProfileBehavior": {
@@ -1643,61 +1698,6 @@
 						"information"
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "int.go2greece.com/aboutus",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "db578c10-9433-40a2-bf6e-6c0ec2dfd011",
-						"exec": [
-							"pm.variables.get(\"QuickLinks\");\r",
-							"\r",
-							"pm.test(\"Response has the required fields - Permalink, NameEn, and QuickLinks\", function () {\r",
-							"    const responseData = pm.response.json();\r",
-							"    \r",
-							"    pm.expect(responseData).to.be.an('object');\r",
-							"    pm.expect(responseData).to.have.property('Permalink');\r",
-							"    pm.expect(responseData).to.have.property('NameEn');\r",
-							"    pm.expect(responseData).to.have.property('QuickLinks');\r",
-							"});\r",
-							"var template = `\r",
-							"<p>Pass for 200</p>\r",
-							"`;\r",
-							"\r",
-							"function constructVisualizerPayload() {\r",
-							"    return {response: pm.response.json()};\r",
-							"}\r",
-							"\r",
-							"pm.visualizer.set(template, constructVisualizerPayload());"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"id": "21ebc53b-170a-4ac0-ab39-f2c687514116",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://localhost:44336/aboutus",
-					"protocol": "https",
-					"host": [
-						"localhost"
-					],
-					"port": "44336",
-					"path": [
-						"aboutus"
-					]
-				},
-				"description": "Go2Greece About Main **Greece** Page"
 			},
 			"response": []
 		}

@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "61dcfe0d-3ad8-4618-b1ad-d193ad8d640e",
+		"name": "Blogs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14712462-61dcfe0d-3ad8-4618-b1ad-d193ad8d640e"
+	},
+	"item": [
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/author",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "12164f66-9bbf-442a-b09a-01b0a4de3cd8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/author",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"author"
+					]
+				},
+				"description": "Reurns the Author Page for this blog.  \n_**Here we need to keep in mind that shold probally be a profile page like /blogs/author/{authorId}**_ _- else we will have loads of duplicate content if the author writes loads of blogs !!_"
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/galleries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "f16fad17-4477-49aa-a2b8-16eb59aa7c40",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/galleries",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"galleries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/faqs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "a3d5aadf-c941-4789-9dc6-dd26bdc6f344",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/faqs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"faqs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/map",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "cfa2b0ce-13ef-49c5-ab34-82878c01ff4e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/map",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/pictures",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "02f14fe5-5655-4bcd-abd9-c2ac1ee441a2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/pictures",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/reviews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "26ce6ac9-6ecd-4f42-a275-255da60fde46",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/reviews",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int.go2greece.com/blogs/{blogid}/videos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "d7f2e71e-19de-483c-bdd0-42a5382ed59e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/blogs/{{blogid}}/videos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"blogs",
+						"{{blogid}}",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
