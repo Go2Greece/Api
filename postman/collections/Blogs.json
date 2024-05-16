@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/author",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/author",
 			"event": [
 				{
 					"listen": "test",
@@ -31,15 +31,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/author",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/author",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
+						"{{destinationUrl}}",
+						"{{blogurl}}",
 						"author"
 					]
 				},
@@ -48,7 +48,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/galleries",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/galleries",
 			"event": [
 				{
 					"listen": "test",
@@ -72,15 +72,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/galleries",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/galleries",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
+						"{{destinationUrl}}",
+						"{{blogurl}}",
 						"galleries"
 					]
 				}
@@ -88,7 +88,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/faqs",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/faqs",
 			"event": [
 				{
 					"listen": "test",
@@ -112,15 +112,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/faqs",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/faqs",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
+						"{{destinationUrl}}",
+						"{{blogurl}}",
 						"faqs"
 					]
 				}
@@ -128,7 +128,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/map",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/map",
 			"event": [
 				{
 					"listen": "test",
@@ -152,15 +152,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/map",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/map",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
+						"{{destinationUrl}}",
+						"{{blogurl}}",
 						"map"
 					]
 				}
@@ -168,7 +168,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/pictures",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/pictures",
 			"event": [
 				{
 					"listen": "test",
@@ -192,15 +192,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/pictures",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/pictures",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
+						"{{destinationUrl}}",
+						"{{blogurl}}",
 						"pictures"
 					]
 				}
@@ -208,7 +208,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/reviews",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/reviews",
 			"event": [
 				{
 					"listen": "test",
@@ -232,23 +232,23 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/reviews",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/comments",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
-						"reviews"
+						"{{destinationUrl}}",
+						"{{blogurl}}",
+						"comments"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/blogs/{blogid}/videos",
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/videos",
 			"event": [
 				{
 					"listen": "test",
@@ -272,15 +272,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/blogs/{{blogid}}/videos",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/videos",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"blogs",
-						"{{blogid}}",
+						"{{destinationUrl}}",
+						"{{blogurl}}",
 						"videos"
 					]
 				}

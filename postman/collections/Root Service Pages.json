@@ -303,14 +303,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/businessfocus",
+					"raw": "https://localhost:44336/events",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"businessfocus"
+						"events"
 					]
 				},
 				"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
@@ -420,14 +420,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/businessfocus",
+					"raw": "https://localhost:44336/nowtrending",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"businessfocus"
+						"nowtrending"
 					]
 				},
 				"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
@@ -552,46 +552,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/otherresorts",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "8e532bae-f2a5-49f6-ab0c-b73349e8dcf6",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"id": "dad7257d-d85f-43f4-b7e2-b8efdf9e0692",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://localhost:44336/otherresorts",
-					"protocol": "https",
-					"host": [
-						"localhost"
-					],
-					"port": "44336",
-					"path": [
-						"otherresorts"
-					]
-				},
-				"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"
-			},
-			"response": []
-		},
-		{
-			"name": "int.go2greece.com/newsletter",
+			"name": "int.go2greece.com/newsletters",
 			"event": [
 				{
 					"listen": "test",
@@ -615,14 +576,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/newsletter",
+					"raw": "https://localhost:44336/newsletters",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"newsletter"
+						"newsletters"
 					]
 				},
 				"description": "The Main Service Page for Greek Tourism Jobs all Over Greece"

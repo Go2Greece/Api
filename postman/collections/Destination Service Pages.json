@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "int.go2greece.com/{destinationid}/aboutus",
+			"name": "int.go2greece.com/{destinationUrl}/aboutus",
 			"event": [
 				{
 					"listen": "test",
@@ -31,14 +31,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/aboutus",
+					"raw": "https://localhost:44336/{{destinationUrl}}/aboutus",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"aboutus"
 					]
 				}
@@ -46,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/additionalinfo",
+			"name": "int.go2greece.com/{destinationUrl}/additionalinfo",
 			"event": [
 				{
 					"listen": "test",
@@ -70,14 +70,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/additionalinfo",
+					"raw": "https://localhost:44336/{{destinationUrl}}/additionalinfo",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"additionalinfo"
 					]
 				}
@@ -85,7 +85,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/adminpictures",
+			"name": "int.go2greece.com/{destinationUrl}/adminpictures",
 			"event": [
 				{
 					"listen": "test",
@@ -109,14 +109,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/adminpictures",
+					"raw": "https://localhost:44336/{{destinationUrl}}/adminpictures",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"adminpictures"
 					]
 				}
@@ -124,7 +124,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/advertising",
+			"name": "int.go2greece.com/{destinationUrl}/advertising",
 			"event": [
 				{
 					"listen": "test",
@@ -148,7 +148,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/destinations/{{destinationid}}/advertising",
+					"raw": "https://localhost:44336/destinations/{{destinationUrl}}/advertising",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -156,7 +156,7 @@
 					"port": "44336",
 					"path": [
 						"destinations",
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"advertising"
 					]
 				}
@@ -164,7 +164,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/availability",
+			"name": "int.go2greece.com/{destinationUrl}/availability",
 			"event": [
 				{
 					"listen": "test",
@@ -188,14 +188,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/availability",
+					"raw": "https://localhost:44336/{{destinationUrl}}/availability",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"availability"
 					]
 				}
@@ -203,7 +203,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/blogs",
+			"name": "int.go2greece.com/{destinationUrl}/blogs",
 			"event": [
 				{
 					"listen": "test",
@@ -227,14 +227,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/blogs",
+					"raw": "https://localhost:44336/{{destinationUrl}}/blogs",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"blogs"
 					]
 				}
@@ -242,7 +242,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/booknow",
+			"name": "int.go2greece.com/{destinationUrl}/booknow",
 			"event": [
 				{
 					"listen": "test",
@@ -266,14 +266,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/booknow",
+					"raw": "https://localhost:44336/{{destinationUrl}}/booknow",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"booknow"
 					]
 				}
@@ -281,7 +281,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/businessfocus",
+			"name": "int.go2greece.com/{destinationUrl}/businessfocus",
 			"event": [
 				{
 					"listen": "test",
@@ -305,14 +305,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/businessfocus",
+					"raw": "https://localhost:44336/{{destinationUrl}}/businessfocus",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"businessfocus"
 					]
 				}
@@ -320,7 +320,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/contactus",
+			"name": "int.go2greece.com/{destinationUrl}/contactus",
 			"event": [
 				{
 					"listen": "test",
@@ -344,14 +344,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/contactus",
+					"raw": "https://localhost:44336/{{destinationUrl}}/contactus",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"contactus"
 					]
 				}
@@ -359,7 +359,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/events",
+			"name": "int.go2greece.com/{destinationUrl}/events",
 			"event": [
 				{
 					"listen": "test",
@@ -383,14 +383,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/events",
+					"raw": "https://localhost:44336/{{destinationUrl}}/events",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"events"
 					]
 				}
@@ -398,7 +398,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/excursions",
+			"name": "int.go2greece.com/{destinationUrl}/excursions",
 			"event": [
 				{
 					"listen": "test",
@@ -422,14 +422,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/excursions",
+					"raw": "https://localhost:44336/{{destinationUrl}}/excursions",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"excursions"
 					]
 				}
@@ -437,7 +437,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/faqs",
+			"name": "int.go2greece.com/{destinationUrl}/faqs",
 			"event": [
 				{
 					"listen": "test",
@@ -461,14 +461,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/faqs",
+					"raw": "https://localhost:44336/{{destinationUrl}}/faqs",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"faqs"
 					]
 				}
@@ -476,7 +476,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/ferries",
+			"name": "int.go2greece.com/{destinationUrl}/ferries",
 			"event": [
 				{
 					"listen": "test",
@@ -500,14 +500,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/ferries",
+					"raw": "https://localhost:44336/{{destinationUrl}}/ferries",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"ferries"
 					]
 				}
@@ -515,7 +515,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/flights",
+			"name": "int.go2greece.com/{destinationUrl}/flights",
 			"event": [
 				{
 					"listen": "test",
@@ -539,14 +539,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/flights",
+					"raw": "https://localhost:44336/{{destinationUrl}}/flights",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"flights"
 					]
 				}
@@ -554,7 +554,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/hotels",
+			"name": "int.go2greece.com/{destinationUrl}/hotels",
 			"event": [
 				{
 					"listen": "test",
@@ -578,14 +578,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/hotels",
+					"raw": "https://localhost:44336/{{destinationUrl}}/hotels",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"hotels"
 					]
 				}
@@ -593,7 +593,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/inresort",
+			"name": "int.go2greece.com/{destinationUrl}/inresort",
 			"event": [
 				{
 					"listen": "test",
@@ -617,14 +617,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/inresort",
+					"raw": "https://localhost:44336/{{destinationUrl}}/inresort",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"inresort"
 					]
 				}
@@ -632,7 +632,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/jobs",
+			"name": "int.go2greece.com/{destinationUrl}/jobs",
 			"event": [
 				{
 					"listen": "test",
@@ -656,14 +656,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/jobs",
+					"raw": "https://localhost:44336/{{destinationUrl}}/jobs",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"jobs"
 					]
 				}
@@ -671,7 +671,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/locationmap",
+			"name": "int.go2greece.com/{destinationUrl}/locationmap",
 			"event": [
 				{
 					"listen": "test",
@@ -695,14 +695,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/locationmap",
+					"raw": "https://localhost:44336/{{destinationUrl}}/locationmap",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"locationmap"
 					]
 				}
@@ -710,7 +710,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/morego2greece",
+			"name": "int.go2greece.com/{destinationUrl}/morego2greece",
 			"event": [
 				{
 					"listen": "test",
@@ -734,14 +734,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/morego2greece",
+					"raw": "https://localhost:44336/{{destinationUrl}}/morego2greece",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"morego2greece"
 					]
 				}
@@ -749,7 +749,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/newsletter",
+			"name": "int.go2greece.com/{destinationUrl}/newsletter",
 			"event": [
 				{
 					"listen": "test",
@@ -773,14 +773,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/newsletter",
+					"raw": "https://localhost:44336/{{destinationUrl}}/newsletter",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"newsletter"
 					]
 				}
@@ -788,7 +788,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/news",
+			"name": "int.go2greece.com/{destinationUrl}/news",
 			"event": [
 				{
 					"listen": "test",
@@ -812,14 +812,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/news",
+					"raw": "https://localhost:44336/{{destinationUrl}}/news",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"news"
 					]
 				}
@@ -827,7 +827,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/otherresorts",
+			"name": "int.go2greece.com/{destinationUrl}/otherresorts",
 			"event": [
 				{
 					"listen": "test",
@@ -851,14 +851,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/otherresorts",
+					"raw": "https://localhost:44336/{{destinationUrl}}/otherresorts",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"otherresorts"
 					]
 				}
@@ -866,7 +866,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/ports",
+			"name": "int.go2greece.com/{destinationUrl}/ports",
 			"event": [
 				{
 					"listen": "test",
@@ -890,14 +890,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/ports",
+					"raw": "https://localhost:44336/{{destinationUrl}}/ports",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"ports"
 					]
 				}
@@ -905,7 +905,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/privacy",
+			"name": "int.go2greece.com/{destinationUrl}/privacy",
 			"event": [
 				{
 					"listen": "test",
@@ -929,14 +929,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/privacy",
+					"raw": "https://localhost:44336/{{destinationUrl}}/privacy",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"privacy"
 					]
 				}
@@ -944,7 +944,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/realestate",
+			"name": "int.go2greece.com/{destinationUrl}/realestate",
 			"event": [
 				{
 					"listen": "test",
@@ -968,14 +968,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/realestate",
+					"raw": "https://localhost:44336/{{destinationUrl}}/realestate",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"realestate"
 					]
 				}
@@ -983,7 +983,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/resortguide",
+			"name": "int.go2greece.com/{destinationUrl}/resortguide",
 			"event": [
 				{
 					"listen": "test",
@@ -1007,14 +1007,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/resortguide",
+					"raw": "https://localhost:44336/{{destinationUrl}}/resortguide",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"resortguide"
 					]
 				}
@@ -1022,7 +1022,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/reviews",
+			"name": "int.go2greece.com/{destinationUrl}/reviews",
 			"event": [
 				{
 					"listen": "test",
@@ -1046,14 +1046,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/reviews",
+					"raw": "https://localhost:44336/{{destinationUrl}}/reviews",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"reviews"
 					]
 				}
@@ -1061,7 +1061,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/search",
+			"name": "int.go2greece.com/{destinationUrl}/search",
 			"event": [
 				{
 					"listen": "test",
@@ -1085,14 +1085,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/search",
+					"raw": "https://localhost:44336/{{destinationUrl}}/search",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"search"
 					]
 				}
@@ -1100,7 +1100,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/sitemap",
+			"name": "int.go2greece.com/{destinationUrl}/sitemap",
 			"event": [
 				{
 					"listen": "test",
@@ -1124,14 +1124,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/sitemap",
+					"raw": "https://localhost:44336/{{destinationUrl}}/sitemap",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"sitemap"
 					]
 				}
@@ -1139,7 +1139,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/terms",
+			"name": "int.go2greece.com/{destinationUrl}/terms",
 			"event": [
 				{
 					"listen": "test",
@@ -1163,14 +1163,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/terms",
+					"raw": "https://localhost:44336/{{destinationUrl}}/terms",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"terms"
 					]
 				}
@@ -1178,7 +1178,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/thingstodo",
+			"name": "int.go2greece.com/{destinationUrl}/thingstodo",
 			"event": [
 				{
 					"listen": "test",
@@ -1202,14 +1202,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/thingstodo",
+					"raw": "https://localhost:44336/{{destinationUrl}}/thingstodo",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"thingstodo"
 					]
 				}
@@ -1217,7 +1217,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/thingstosee",
+			"name": "int.go2greece.com/{destinationUrl}/thingstosee",
 			"event": [
 				{
 					"listen": "test",
@@ -1241,14 +1241,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/thingstosee",
+					"raw": "https://localhost:44336/{{destinationUrl}}/thingstosee",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"thingstosee"
 					]
 				}
@@ -1256,7 +1256,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/tickets",
+			"name": "int.go2greece.com/{destinationUrl}/tickets",
 			"event": [
 				{
 					"listen": "test",
@@ -1280,14 +1280,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/tickets",
+					"raw": "https://localhost:44336/{{destinationUrl}}/tickets",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"tickets"
 					]
 				}
@@ -1295,7 +1295,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/touristpictures",
+			"name": "int.go2greece.com/{destinationUrl}/touristpictures",
 			"event": [
 				{
 					"listen": "test",
@@ -1319,14 +1319,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/touristpictures",
+					"raw": "https://localhost:44336/{{destinationUrl}}/touristpictures",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"touristpictures"
 					]
 				}
@@ -1334,7 +1334,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/trademarks",
+			"name": "int.go2greece.com/{destinationUrl}/trademarks",
 			"event": [
 				{
 					"listen": "test",
@@ -1358,14 +1358,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/trademarks",
+					"raw": "https://localhost:44336/{{destinationUrl}}/trademarks",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"trademarks"
 					]
 				}
@@ -1373,7 +1373,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/traffic",
+			"name": "int.go2greece.com/{destinationUrl}/traffic",
 			"event": [
 				{
 					"listen": "test",
@@ -1397,14 +1397,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/traffic",
+					"raw": "https://localhost:44336/{{destinationUrl}}/traffic",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"traffic"
 					]
 				}
@@ -1412,7 +1412,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/transfers",
+			"name": "int.go2greece.com/{destinationUrl}/transfers",
 			"event": [
 				{
 					"listen": "test",
@@ -1436,14 +1436,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/transfers",
+					"raw": "https://localhost:44336/{{destinationUrl}}/transfers",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"transfers"
 					]
 				}
@@ -1451,7 +1451,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/videos",
+			"name": "int.go2greece.com/{destinationUrl}/videos",
 			"event": [
 				{
 					"listen": "test",
@@ -1475,14 +1475,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/videos",
+					"raw": "https://localhost:44336/{{destinationUrl}}/videos",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"videos"
 					]
 				}
@@ -1490,7 +1490,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/weather",
+			"name": "int.go2greece.com/{destinationUrl}/weather",
 			"event": [
 				{
 					"listen": "test",
@@ -1514,14 +1514,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/weather",
+					"raw": "https://localhost:44336/{{destinationUrl}}/weather",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"weather"
 					]
 				}
@@ -1529,7 +1529,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}webcams",
+			"name": "int.go2greece.com/{destinationUrl}webcams",
 			"event": [
 				{
 					"listen": "test",
@@ -1553,14 +1553,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/webcams",
+					"raw": "https://localhost:44336/{{destinationUrl}}/webcams",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"webcams"
 					]
 				}
@@ -1568,7 +1568,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/webextenders",
+			"name": "int.go2greece.com/{destinationUrl}/webextenders",
 			"event": [
 				{
 					"listen": "test",
@@ -1592,15 +1592,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/destinations/{{destinationid}}/webextenders",
+					"raw": "https://localhost:44336/{{destinationUrl}}/webextenders",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"destinations",
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"webextenders"
 					]
 				}
@@ -1608,7 +1607,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}/workers",
+			"name": "int.go2greece.com/{destinationUrl}/workers",
 			"event": [
 				{
 					"listen": "test",
@@ -1632,14 +1631,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}/workers",
+					"raw": "https://localhost:44336/{{destinationUrl}}/workers",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}",
+						"{{destinationUrl}}",
 						"workers"
 					]
 				}

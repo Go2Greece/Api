@@ -138,14 +138,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/destinations/{{destinationid}}",
+					"raw": "https://localhost:44336/{{destinationid}}",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"destinations",
 						"{{destinationid}}"
 					]
 				}
