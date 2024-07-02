@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "c9fd2824-aa85-4911-8a29-516169592209",
+		"name": "Content Profile Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14712462-c9fd2824-aa85-4911-8a29-516169592209"
+	},
+	"item": [
+		{
+			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/videos Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "85c65637-0db3-4a0f-8062-359744f96d81",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{blogurl}}/videos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"{{destinationUrl}}",
+						"{{blogurl}}",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

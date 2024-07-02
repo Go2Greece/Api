@@ -63,6 +63,21 @@
 		},
 		{
 			"name": "int.go2greece.com/location",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "be84ad08-7398-40cb-b9b9-e47efdecce47",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "a59a8538-3c89-485f-90ff-30db56c3635e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true

@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "int.go2greece.com",
+			"name": "api.go2greece.com",
 			"event": [
 				{
 					"listen": "test",
@@ -114,7 +114,7 @@
 			]
 		},
 		{
-			"name": "int.go2greece.com/{destinationid}",
+			"name": "api.go2greece.com/{destinationid}",
 			"event": [
 				{
 					"listen": "test",
@@ -138,21 +138,103 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationid}}",
+					"raw": "https://localhost:44336/{{destinationUrl}}",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"{{destinationid}}"
+						"{{destinationUrl}}"
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "c936a0ba-ffce-41e2-af9f-e7ff808030eb",
+					"name": "api.go2greece.com/{destinationid}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/{{destinationUrl}}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"{{destinationUrl}}"
+							]
+						}
+					},
+					"cookie": []
+				}
+			]
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}",
+			"name": "api.go2greece.com/{destinationid}/happydays",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c8ae9f-23dc-4ebc-a19d-cff6213a9f1b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "0abe953f-ef9f-4490-98db-7f1ebdef2005",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/{{destinationUrl}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"{{destinationUrl}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2d8de935-7705-40c5-8f96-ad1ae25ce5b0",
+					"name": "api.go2greece.com/{destinationid}/redlion",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44336/{{destinationurl}}/redlion",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"{{destinationurl}}",
+								"redlion"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}",
 			"event": [
 				{
 					"listen": "test",

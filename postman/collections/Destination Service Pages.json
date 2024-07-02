@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "int.go2greece.com/{destinationUrl}/aboutus",
+			"name": "api.go2greece.com/{destinationUrl}/aboutus",
 			"event": [
 				{
 					"listen": "test",
@@ -31,12 +31,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationUrl}}/aboutus",
+					"raw": "https://{{baseurl}}/{{destinationUrl}}/aboutus",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"{{baseurl}}"
 					],
-					"port": "44336",
 					"path": [
 						"{{destinationUrl}}",
 						"aboutus"
@@ -46,7 +45,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/additionalinfo",
+			"name": "api.go2greece.com/{destinationUrl}/information",
 			"event": [
 				{
 					"listen": "test",
@@ -70,7 +69,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationUrl}}/additionalinfo",
+					"raw": "https://localhost:44336/{{destinationUrl}}/information",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -78,14 +77,14 @@
 					"port": "44336",
 					"path": [
 						"{{destinationUrl}}",
-						"additionalinfo"
+						"information"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/adminpictures",
+			"name": "api.go2greece.com/{destinationUrl}/pictures",
 			"event": [
 				{
 					"listen": "test",
@@ -109,7 +108,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationUrl}}/adminpictures",
+					"raw": "https://localhost:44336/{{destinationUrl}}/pictures",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -117,14 +116,14 @@
 					"port": "44336",
 					"path": [
 						"{{destinationUrl}}",
-						"adminpictures"
+						"pictures"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/advertising",
+			"name": "api.go2greece.com/{destinationUrl}/advertising",
 			"event": [
 				{
 					"listen": "test",
@@ -148,14 +147,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/destinations/{{destinationUrl}}/advertising",
+					"raw": "https://localhost:44336/{{destinationUrl}}/advertising",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"destinations",
 						"{{destinationUrl}}",
 						"advertising"
 					]
@@ -164,7 +162,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/availability",
+			"name": "api.go2greece.com/{destinationUrl}/availability",
 			"event": [
 				{
 					"listen": "test",
@@ -203,7 +201,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/blogs",
+			"name": "api.go2greece.com/{destinationUrl}/blogs",
 			"event": [
 				{
 					"listen": "test",
@@ -242,7 +240,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/booknow",
+			"name": "api.go2greece.com/{destinationUrl}/booknow",
 			"event": [
 				{
 					"listen": "test",
@@ -281,7 +279,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/businessfocus",
+			"name": "api.go2greece.com/{destinationUrl}/businessfocus",
 			"event": [
 				{
 					"listen": "test",
@@ -320,7 +318,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/contactus",
+			"name": "api.go2greece.com/{destinationUrl}/contactus",
 			"event": [
 				{
 					"listen": "test",
@@ -359,7 +357,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/events",
+			"name": "api.go2greece.com/{destinationUrl}/events",
 			"event": [
 				{
 					"listen": "test",
@@ -398,7 +396,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/excursions",
+			"name": "api.go2greece.com/{destinationUrl}/excursions",
 			"event": [
 				{
 					"listen": "test",
@@ -422,7 +420,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationUrl}}/excursions",
+					"raw": "https://localhost:44336/{{destinationUrl}}/reservations",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -430,14 +428,14 @@
 					"port": "44336",
 					"path": [
 						"{{destinationUrl}}",
-						"excursions"
+						"reservations"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/faqs",
+			"name": "api.go2greece.com/{destinationUrl}/faqs",
 			"event": [
 				{
 					"listen": "test",
@@ -476,7 +474,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/ferries",
+			"name": "api.go2greece.com/{destinationUrl}/ferries",
 			"event": [
 				{
 					"listen": "test",
@@ -515,7 +513,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/flights",
+			"name": "api.go2greece.com/{destinationUrl}/flights",
 			"event": [
 				{
 					"listen": "test",
@@ -554,7 +552,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/hotels",
+			"name": "api.go2greece.com/{destinationUrl}/reservations",
 			"event": [
 				{
 					"listen": "test",
@@ -578,7 +576,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationUrl}}/hotels",
+					"raw": "https://localhost:44336/{{destinationUrl}}/reservations",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -586,14 +584,14 @@
 					"port": "44336",
 					"path": [
 						"{{destinationUrl}}",
-						"hotels"
+						"reservations"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/inresort",
+			"name": "api.go2greece.com/{destinationUrl}/inresort",
 			"event": [
 				{
 					"listen": "test",
@@ -632,7 +630,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/jobs",
+			"name": "api.go2greece.com/{destinationUrl}/jobs",
 			"event": [
 				{
 					"listen": "test",
@@ -671,7 +669,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/locationmap",
+			"name": "api.go2greece.com/{destinationUrl}/location",
 			"event": [
 				{
 					"listen": "test",
@@ -695,7 +693,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/{{destinationUrl}}/locationmap",
+					"raw": "https://localhost:44336/{{destinationUrl}}/location",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -703,14 +701,14 @@
 					"port": "44336",
 					"path": [
 						"{{destinationUrl}}",
-						"locationmap"
+						"location"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/morego2greece",
+			"name": "api.go2greece.com/{destinationUrl}/morego2greece",
 			"event": [
 				{
 					"listen": "test",
@@ -749,7 +747,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/newsletter",
+			"name": "api.go2greece.com/{destinationUrl}/newsletter",
 			"event": [
 				{
 					"listen": "test",
@@ -788,7 +786,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/news",
+			"name": "api.go2greece.com/{destinationUrl}/news",
 			"event": [
 				{
 					"listen": "test",
@@ -827,7 +825,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/otherresorts",
+			"name": "api.go2greece.com/{destinationUrl}/otherresorts",
 			"event": [
 				{
 					"listen": "test",
@@ -866,7 +864,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/ports",
+			"name": "api.go2greece.com/{destinationUrl}/ports",
 			"event": [
 				{
 					"listen": "test",
@@ -905,7 +903,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/privacy",
+			"name": "api.go2greece.com/{destinationUrl}/privacy",
 			"event": [
 				{
 					"listen": "test",
@@ -944,7 +942,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/realestate",
+			"name": "api.go2greece.com/{destinationUrl}/realestate",
 			"event": [
 				{
 					"listen": "test",
@@ -983,7 +981,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/resortguide",
+			"name": "api.go2greece.com/{destinationUrl}/resortguide",
 			"event": [
 				{
 					"listen": "test",
@@ -1022,7 +1020,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/reviews",
+			"name": "api.go2greece.com/{destinationUrl}/reviews",
 			"event": [
 				{
 					"listen": "test",
@@ -1061,7 +1059,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/search",
+			"name": "api.go2greece.com/{destinationUrl}/search",
 			"event": [
 				{
 					"listen": "test",
@@ -1100,7 +1098,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/sitemap",
+			"name": "api.go2greece.com/{destinationUrl}/sitemap",
 			"event": [
 				{
 					"listen": "test",
@@ -1139,7 +1137,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/terms",
+			"name": "api.go2greece.com/{destinationUrl}/terms",
 			"event": [
 				{
 					"listen": "test",
@@ -1178,7 +1176,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/thingstodo",
+			"name": "api.go2greece.com/{destinationUrl}/thingstodo",
 			"event": [
 				{
 					"listen": "test",
@@ -1217,7 +1215,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/thingstosee",
+			"name": "api.go2greece.com/{destinationUrl}/thingstosee",
 			"event": [
 				{
 					"listen": "test",
@@ -1256,7 +1254,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/tickets",
+			"name": "api.go2greece.com/{destinationUrl}/tickets",
 			"event": [
 				{
 					"listen": "test",
@@ -1295,7 +1293,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/touristpictures",
+			"name": "api.go2greece.com/{destinationUrl}/touristpictures",
 			"event": [
 				{
 					"listen": "test",
@@ -1334,7 +1332,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/trademarks",
+			"name": "api.go2greece.com/{destinationUrl}/trademarks",
 			"event": [
 				{
 					"listen": "test",
@@ -1373,7 +1371,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/traffic",
+			"name": "api.go2greece.com/{destinationUrl}/traffic",
 			"event": [
 				{
 					"listen": "test",
@@ -1412,7 +1410,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/transfers",
+			"name": "api.go2greece.com/{destinationUrl}/transfers",
 			"event": [
 				{
 					"listen": "test",
@@ -1451,7 +1449,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/videos",
+			"name": "api.go2greece.com/{destinationUrl}/videos",
 			"event": [
 				{
 					"listen": "test",
@@ -1490,7 +1488,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/weather",
+			"name": "api.go2greece.com/{destinationUrl}/weather",
 			"event": [
 				{
 					"listen": "test",
@@ -1529,7 +1527,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}webcams",
+			"name": "api.go2greece.com/{destinationUrl}webcams",
 			"event": [
 				{
 					"listen": "test",
@@ -1568,7 +1566,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/webextenders",
+			"name": "api.go2greece.com/{destinationUrl}/webextenders",
 			"event": [
 				{
 					"listen": "test",
@@ -1607,7 +1605,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/{destinationUrl}/workers",
+			"name": "api.go2greece.com/{destinationUrl}/workers",
 			"event": [
 				{
 					"listen": "test",

@@ -2,12 +2,13 @@
 	"info": {
 		"_postman_id": "61dcfe0d-3ad8-4618-b1ad-d193ad8d640e",
 		"name": "Blogs",
+		"description": "This is the Service URLs of the main Blog(s)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "14712462-61dcfe0d-3ad8-4618-b1ad-d193ad8d640e"
 	},
 	"item": [
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/author",
+			"name": "Get Blog Author Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",
@@ -48,7 +49,7 @@
 			"response": []
 		},
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/galleries",
+			"name": "Get Blog Image Gallery Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",
@@ -88,7 +89,7 @@
 			"response": []
 		},
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/faqs",
+			"name": "Get Blog FAQs Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",
@@ -128,7 +129,7 @@
 			"response": []
 		},
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/map",
+			"name": "Get Blog Map / Location Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",
@@ -168,7 +169,7 @@
 			"response": []
 		},
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/pictures",
+			"name": "Get Blog Pictures Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",
@@ -208,7 +209,7 @@
 			"response": []
 		},
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/reviews",
+			"name": "Get Blog Reviews Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",
@@ -248,7 +249,7 @@
 			"response": []
 		},
 		{
-			"name": "api.go2greece.com/{{destinationUrl}}/{blogurl}/videos",
+			"name": "Get Blog Videos Service with 'DestinationUrl 'and 'BlogUrl'",
 			"event": [
 				{
 					"listen": "test",

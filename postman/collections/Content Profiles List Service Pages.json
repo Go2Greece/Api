@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/faqs",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/faqs",
 			"event": [
 				{
 					"listen": "test",
@@ -31,15 +31,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/faqs",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{contentprofilesllstUrl}}/faqs",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"contentprofileslists",
-						"{{contentprofilesllstid}}",
+						"{{destinationUrl}}",
+						"{{contentprofilesllstUrl}}",
 						"faqs"
 					]
 				}
@@ -47,7 +47,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/reviews",
+			"name": "api.go2greece.com/{destinationUrl}/{contentprofileslistId}/reviews",
 			"event": [
 				{
 					"listen": "test",
@@ -71,14 +71,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44336/contentprofileslists/{{contentprofilesllstid}}/reviews",
+					"raw": "https://localhost:44336/{{destinationUrl}}/{{contentprofilesllstid}}/reviews",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
 					"port": "44336",
 					"path": [
-						"contentprofileslists",
+						"{{destinationUrl}}",
 						"{{contentprofilesllstid}}",
 						"reviews"
 					]
@@ -87,7 +87,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/pictures",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/pictures",
 			"event": [
 				{
 					"listen": "test",
@@ -127,7 +127,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/map",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/map",
 			"event": [
 				{
 					"listen": "test",
@@ -167,7 +167,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/videos",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/videos",
 			"event": [
 				{
 					"listen": "test",
@@ -207,7 +207,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/news",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/news",
 			"event": [
 				{
 					"listen": "test",
@@ -247,7 +247,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/jobs",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/jobs",
 			"event": [
 				{
 					"listen": "test",
@@ -287,7 +287,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/blogs",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/blogs",
 			"event": [
 				{
 					"listen": "test",
@@ -327,7 +327,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/history",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/history",
 			"event": [
 				{
 					"listen": "test",
@@ -367,7 +367,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/info",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/info",
 			"event": [
 				{
 					"listen": "test",
@@ -407,7 +407,7 @@
 			"response": []
 		},
 		{
-			"name": "int.go2greece.com/contentprofileslists/{contentprofileslistId}/galleries",
+			"name": "api.go2greece.com/contentprofileslists/{contentprofileslistId}/galleries",
 			"event": [
 				{
 					"listen": "test",
